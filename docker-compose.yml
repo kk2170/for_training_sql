@@ -5,5 +5,3 @@ db:
   environment:
     MYSQL_ROOT_PASSWORD: password
   command: --secure-file-priv="/docker-entrypoint-initdb.d"
-  ports:
-    - "3306:3306"
