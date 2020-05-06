@@ -1,0 +1,1 @@
+LOAD DATA INFILE '/docker-entrypoint-initdb.d/KEN_ALL_UTF8.CSV' INTO TABLE zipcode.zipcode FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' (code, old_zipcode, zip_code, prefecture_kana, city_kana, town_kana, prefecture, city, town, @dummy, @dummy, @dummy, @dummy, @dummy, @dummy);
