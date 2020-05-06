@@ -2,6 +2,7 @@ db:
   image: mysql:latest
   volumes:
     - ./initdb.d:/docker-entrypoint-initdb.d
+    - ./my.cnf:/etc/mysql/conf.d/my.cnf
   environment:
     MYSQL_ROOT_PASSWORD: password
   command: --secure-file-priv="/docker-entrypoint-initdb.d"
