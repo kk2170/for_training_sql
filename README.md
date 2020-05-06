@@ -7,6 +7,6 @@ https://www.post.japanpost.jp/zipcode/dl/kogaki-zip.html
 
 ```
 $ docker-compose up -d
-$ docker exec -it for_training_sql_1 /bin/sh
+$ docker exec -it for_training_sql_db_1 /bin/sh
 # mysql -uroot -ppassword zipcode
 ```
