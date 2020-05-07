@@ -2,7 +2,7 @@ db:
   image: mysql:latest
   volumes:
     - ./initdb.d:/docker-entrypoint-initdb.d
-    - ./my.cnf:/etc/mysql/conf.d/my.cnf
+    - ./mycnf:/etc/mysql/conf.d/
   environment:
     MYSQL_ROOT_PASSWORD: password
-  command: --secure-file-priv="/docker-entrypoint-initdb.d"
+  command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --secure-file-priv="/docker-entrypoint-initdb.d"
