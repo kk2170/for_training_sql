@@ -1,5 +1,5 @@
 db:
-  image: mysql:latest
+  build: .
   volumes:
     - ./initdb.d:/docker-entrypoint-initdb.d
     - ./mycnf:/etc/mysql/conf.d/
