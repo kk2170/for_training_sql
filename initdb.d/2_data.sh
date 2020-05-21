@@ -1,1 +1,0 @@
-mysql -uroot -ppassword --local-infile zipcode < /docker-entrypoint-initdb.d/load_data_infile.sql

@@ -1,7 +1,7 @@
 db:
   build: .
   volumes:
-    - ./initdb.d:/docker-entrypoint-initdb.d
+    - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
     - ./mycnf:/etc/mysql/conf.d/
   environment:
     MYSQL_ROOT_PASSWORD: password
