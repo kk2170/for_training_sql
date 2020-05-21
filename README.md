@@ -1,4 +1,4 @@
-#日本郵便が公開している郵便番号のデータをデータセットに使ったテストDB
+# 日本郵便が公開している郵便番号のデータをデータセットに使ったテストDB
 
 データは以下のURLから取得
 https://www.post.japanpost.jp/zipcode/dl/kogaki-zip.html
