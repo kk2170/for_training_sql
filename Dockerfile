@@ -1,7 +1,7 @@
 FROM mysql:latest
 
 RUN apt-get update
-RUN apt-get -y install locales-all
+RUN apt-get -y install locales-all wget
 
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja
